@@ -37,3 +37,23 @@ The integers in the bottom right part of the matrix of size 2*3 are highlighted 
 18 38 80 13 67 72 44 
 92 51 30 32 96 10 56
 
+class solution{
+  public static void main(String[] argsssssssss){
+            Scanner num = new Scanner(System.in);
+            int A = num.nextInt() , B = num.nextInt();
+            int [][]arr = new int [A][B];
+            for (int i = 0; i < A; i++) {
+                for (int j = 0; j < B; j++) {
+                    arr[i][j] = num.nextInt();
+                }
+            }
+            
+           int a = num.nextInt() , b = num.nextInt();
+            for (int i = A-a; i < A; i++) {
+                for (int j =B-b; j < B; j++) {
+                    System.out.print(arr[i][j]+" ");
+                }
+                System.out.println("");
+            }
+  }
+}
